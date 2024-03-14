@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WomenInSTEM</title>
+    <!-- my icon -->
+    <link rel="shortcut icon" href="https://i.ibb.co/tQsYD3p/wistem.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- my font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <header>
+        <div class="navbar">
+          <div class="logo"><a href="#pembuka">WomenInSTEM</a></div>
+          <ul class="links">
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#belajar">Belajar</a></li>
+            <li><a href="#event">Event</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#hubungi">Hubungi Kami</a></li>
+          </ul>
+          <a href="#" class="action_btn">Daftar</a>
+          <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        
+        <div class="dropdown_menu">
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#belajar">Belajar</a></li>
+          <li><a href="#event">Event</a></li>
+          <li><a href="#artikel">Artikel</a></li>
+          <li><a href="#hubungi">Hubungi Kami</a></li>
+          <li><a href="#" class="action_btn">Daftar</a></li>
+        </div>
+      </header>
+    </nav>
+
+    <main>
+      <section id="pembuka">
+        <div class="kata-kata">
+          <span class="judul">Berani STEM, Masa Depan Gemilang! ✨</span>
+          <h1>Perempuan Berdaya, Dunia Maju</h1>
+          <p>
+            Bergabung WomenInSTEM untuk menginspirasi, belajar, dan membentuk
+            masa depan STEM yang lebih <span>inklusif</span> dan
+            <span>inovatif!</span>
+          </p>
+          <div class="btn-bungkus">
+            <a href="#" class="action_btn">Daftar Sekarang</a>
+            <a href="#tentang" class="info_btn">Info Selengkapnya</a>
+          </div>
+        </div>
+
+        <img src="https://i.ibb.co/3f9Z9Wy/hero.png" alt="Gambar Ajakan" />
+      </section>
+
+      <section id="data">
+        <ul>
+          <li>
+            <span id="acara">0</span>
+            <p>Acara</p>
+          </li>
+          <li>
+            <span id="anggota">0</span>
+            <p>Anggota</p>
+          </li>
+          <li>
+            <span id="provinsi">0</span>
+            <p>Provinsi</p>
+          </li>
+        </ul>
+      </section>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg1"><path fill="#f1f5f9" fill-opacity="1" d="M0,288L1440,192L1440,320L0,320Z"></path></svg>
+      <section id="tentang">
+        <div class="left">
+          <span class="judul">Tentang Kami 🏫</span>
+          <h1>Inspirasi STEM, Terobos Karier!</h1>
+          <p id="description">
+            WomenInSTEM adalah komunitas yang menginspirasi perempuan untuk
+            mengejar karier dalam sains, teknologi, teknik, dan matematika
+            (STEM). Kami menyediakan
+            <span
+              >program mentoring, jaringan profesional, sumber daya online, dan
+              pelatihan keterampilan</span
+            >
+            untuk membantu perempuan meraih kesuksesan dalam STEM.
+          </p>
+          <p>
+            <span>Bergabunglah dengan kami</span> dan jadilah bagian dari
+            perubahan positif dalam dunia STEM!
+          </p>
+        </div>
+        <div class="right">
+          <div class="gallery">
+            <div class="btn-img">
+              <a href="#" class="next" onclick="moveSlider(1)"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a href="#" class="prev" onclick="moveSlider(-1)"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="slider">
+              <img src="https://i.ibb.co/hC04tVh/ttg1.jpg" alt="Meeting ke 1" />
+              <img src="https://i.ibb.co/7WQXx0m/ttg2.jpg" alt="Meeting ke 2" />
+              <img src="https://i.ibb.co/PDmDzj1/ttg3.jpg" alt="Meeting ke 3" />
+            </div>
+          </div>
+          <div id="preview"></div>
+        </div>
+      </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg2"><path fill="#f1f5f9" fill-opacity="1" d="M0,128L1440,64L1440,0L0,0Z"></path></svg>
+
+      <section id="belajar">
+        <span class="judul">Belajar 🎓</span>
+        <div class="pembungkus-judul">
+        <h1>Program Pelatihan Berbasis Industri WomenInSTEM</h1>
+        <a href="#">Lihat Semua</a>
+        </div>
+        <p>
+          Program ini memberikan akses ke kelas-kelas yang relevan dengan
+          kebutuhan industri saat ini, sehingga mempersiapkan perempuan untuk
+          sukses dalam karier STEM.
+        </p>
+
+        <div class="container">
+            <div class="card">
+                <img src="https://i.ibb.co/cFknRhF/1.jpg" alt="Card 1">
+                <div class="card-content">
+                    <h2 class="card-title">Coding for Change</h2>
+                    <p class="card-description">Program pelatihan coding intensif untuk wanita yang ingin mempelajari pemrograman dan mengembangkan aplikasi yang memberikan dampak positif bagi masyarakat.</p>
+                    <a href="#" class="card-button">Lihat Kelas</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/fx2GP8V/2.jpg" alt="Card 2">
+                <div class="card-content">
+                    <h2 class="card-title">Leadership Lab: Women in Tech</h2>
+                    <p class="card-description">Pelatihan kepemimpinan khusus untuk wanita di industri teknologi, membantu mereka mengasah keterampilan kepemimpinan dan memimpin inovasi.</p>
+                    <a href="#" class="card-button">Lihat Kelas</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/1Kq3yZs/3.jpg" alt="Card 3">
+                <div class="card-content">
+                    <h2 class="card-title">Data Science Dive</h2>
+                    <p class="card-description">Pelatihan mendalam dalam ilmu data untuk wanita yang ingin memahami analisis data, machine learning, dan kecerdasan buatan untuk memecahkan masalah dunia nyata dalam STEM.</p>
+                    <a href="#" class="card-button">Lihat Kelas</a>
+                </div>
+            </div>
+      </section>
+
+      <section id="event">
+       <div class="teks-event">
+        <span class="judul">Event 🎉</span>
+        <h1>Acara Menarik WomenInSTEM</h1>
+        <p>Selain program, WomenInSTEM memiliki event-event yang inspiratif untuk Anda ikuti.</p>
+       </div>
+       
+          <div class="tab">
+            <button class="tablinks" onclick="openEvent(event, 'Conference')">Konferensi STEM</button>
+            <button class="tablinks" onclick="openEvent(event, 'Networking')">Networking Events</button>
+            <button class="tablinks" onclick="openEvent(event, 'Workshop')">Workshop Keterampilan</button>
+            <button class="tablinks" onclick="openEvent(event, 'Webinar')">Webinar</button>
+          </div>
+
+          <div id="Conference" class="tabcontent">
+            <h2>🎓 Konferensi STEM</h2>
+            <p>Acara berskala besar dengan pembicara terkemuka dalam industri STEM untuk berbagi wawasan dan tren terbaru.</p>
+          </div>
+
+          <div id="Networking" class="tabcontent">
+            <h2>🤝 Networking Events</h2>
+            <p>Pertemuan informal untuk berbagi pengalaman, membangun jaringan, dan mendukung pertukaran ide antara sesama perempuan dalam STEM.</p>
+          </div>
+
+          <div id="Workshop" class="tabcontent">
+            <h2>🔧 Workshop Keterampilan</h2>
+            <p>Sesi praktis untuk meningkatkan keterampilan teknis dan soft skills yang diperlukan dalam karier STEM.</p>
+          </div>
+
+          <div id="Webinar" class="tabcontent">
+            <h2>💻 Webinar</h2>
+            <p>Sesi online dengan pakar dalam bidang STEM untuk berbagi pengetahuan dan pengalaman.</p>
+          </div>
+      </section>
+
+      <section id="artikel">
+        <span class="judul">Artikel  🌟</span>
+        <div class="pembungkus-judul-artikel">
+          <h1>Cerita Inspiratif: Sukses Lulusan WomenInSTEM</h1>
+        <p>Dapatkan cerita inspiratif dari lulusan WomenInSTEM yang telah sukses di dunia STEM. Mereka berbagi pengalaman, tantangan, dan tips untuk meraih kesuksesan. Jangan lewatkan kesempatan ini untuk terinspirasi dan belajar!</p>
+        </div>
+        <div class="bungkus-artikel">
+          <a href="#" class="custom-card">
+            <img src="https://i.ibb.co/3FW8wwP/dua.jpg" alt="Article Image" class="custom-card-img">
+            <div class="custom-card-content">
+              <h2 class="custom-card-title">Pecahkan Mitos: Wanita dan Teknologi yang Menginspirasi</h2>
+              <p class="custom-card-description">Menyingkap kisah inspiratif seorang wanita yang mematahkan stereotip di dunia teknologi. Temukan bagaimana ia menghadapi tantangan dan meraih kesuksesan, mengajak Anda untuk mempertimbangkan karier di bidang STEM.</p>
+            </div>
+          </a>
+          
+          <a href="#" class="custom-card">
+            <img src="https://i.ibb.co/bsnRDq2/satu.jpg" alt="Article Image" class="custom-card-img">
+            <div class="custom-card-content">
+              <h2 class="custom-card-title">Inovasi Tak Terbatas: Kisah Wanita Pionir dalam Sains</h2>
+              <p class="custom-card-description">Mengisahkan perjalanan seorang wanita yang mengubah dunia sains dengan inovasi dan tekadnya. Artikel ini mengajak Anda untuk melihat jauh ke depan, membebaskan diri dari batas-batas konvensional dalam menjelajahi dunia STEM.</p>
+            </div>
+          </a>
+          
+          <a href="#" class="custom-card">
+            <img src="https://i.ibb.co/Nx44hB2/tiga.jpg" alt="Article Image" class="custom-card-img">
+            <div class="custom-card-content">
+              <h2 class="custom-card-title">Meniti Langkah Maju: Kisah Inspiratif Wanita di Dunia Matematika</h2>
+              <p class="custom-card-description">Kisah wanita yang membuktikan kehebatannya di bidang matematika, merintis jalan bagi generasi berikutnya. Artikel ini mengajak Anda untuk mengeksplorasi keindahan matematika dan mengikuti jejak kesuksesan wanita-wanita hebat dalam STEM.</p>
+            </div>
+          </a>
+          
+        </div>
+      </section>
+
+      <section id="hubungi" class="contact">
+        
+        <div class="teks-hub">
+          <h1>Hubungi Kami</h1>
+        <p>Jika Anda memiliki pertanyaan, saran, atau ingin berkolaborasi dengan WomenInSTEM, jangan ragu untuk menghubungi kami melalui formulir di bawah ini. Kami akan dengan senang hati menjawab setiap pertanyaan yang Anda miliki.</p>
+    
+        </div>
+
+        <div class="row">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4080720506413!2d110.4282291750442!3d-6.961094893039363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f3597316113f%3A0xa5ff47b450ab28a2!2sJl.%20Ronggowarsito%2C%20Tj.%20Mas%2C%20Kec.%20Semarang%20Utara%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050174!5e0!3m2!1sid!2sid!4v1710399483122!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+    
+          <form action="">
+            <div id="warning"></div>        
+            <div class="input-group">
+                <input id="name" type="text" placeholder="nama">
+            </div>
+
+            <div class="input-group">
+              <input id="city" type="text" placeholder="kota">
+            </div>
+
+            <div class="input-group">
+              <input id="email" type="email" placeholder="email">
+            </div>
+
+            <div class="input-group">
+              <input id="zip-code" type="number" placeholder="kode pos">
+            </div>
+
+            <div class="input-group">
+              <textarea id="message" placeholder="pesan"></textarea>
+            </div>
+
+            <div class="cek">
+              <input id="status" type="checkbox"> 
+            <label for="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+            </div>
+
+            <button id="submit-form" type="submit" class="btn">Kirim</button>
+          </form>
+    
+        </div>
+      </section>
+
+      <section id="ajakan">
+        <div class="ajakan-content">
+          <h1>Siap Menginspirasi dan Mengubah Dunia STEM Bersama WomenInSTEM?</h1>
+        <p>Ayo bergabung dengan WomenInSTEM untuk meraih kesuksesan dan membangun masa depan STEM yang lebih inklusif dan inovatif!</p>
+        <a href="https://skilvul.com" class="action_btn">Daftar Sekarang</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="container-footer">
+      <div class="footer-content">
+        <img src="https://i.ibb.co/tQsYD3p/wistem.png" alt="logo" width="50px">
+        <p>Jl. Ronggowarsito, Tj. Mas, Kec. Semarang Utara, Kota Semarang, Jawa Tengah</p>
+
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <h3>Belajar</h3>
+        <li><a href="#">Sains</a></li>
+        <li><a href="#">Teknologi</a></li>
+        <li><a href="#">Rekayasa</a></li>
+        <li><a href="#">Matematika</a></li>
+      </div>
+
+      <div class="footer-content">
+        <h3>Event</h3>
+        <li><a href="#">Konferensi</a></li>
+        <li><a href="#">Networking</a></li>
+        <li><a href="#">Workshop Keterampilan</a></li>
+        <li><a href="#">Webinar</a></li>
+      </div>
+
+      <div class="footer-content">
+        <h3>Artikel</h3>
+        <li><a href="#">Kisah Inspiratif</a></li>
+        <li><a href="#">Panduan Karier</a></li>
+        <li><a href="#">Trend Industri</a></li>
+        <li><a href="#">Teknologi dan Inovasi</a></li>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
