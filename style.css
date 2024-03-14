@@ -678,13 +678,9 @@ main {
     align-items: center;
     margin-top: 1rem;
     background-color: var(--putih);
-}
-
-.contact .row form .input-group input {
     width: 100%;
     padding: 1.5rem;
     font-size: 1rem;
-    background: none;
     color: var(--bg);
 }
 
@@ -695,11 +691,22 @@ main {
     color: var(--bg);
 }
 
-
-.contact .row form .cek {
+#status {
     margin-top: 1rem;
-    color: var(--putih);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
+
+#check {
+    display: inline-block;
+    color: var(--putih);
+    margin-top: 1rem;
+    text-align: start;
+    vertical-align: middle;
+    width: calc(100% - 30px);
+}
+
 
 .contact .row form .btn {
     margin-top: 1rem;
